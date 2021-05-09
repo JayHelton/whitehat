@@ -1,0 +1,41 @@
+# Nmap 7.91 scan initiated Sun May  2 14:33:58 2021 as: nmap -sS -sC -F -oN initial.nmap 10.10.40.159
+Nmap scan report for 10.10.40.159
+Host is up (0.10s latency).
+Not shown: 89 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+| ssl-cert: Subject: commonName=steelmountain
+| Not valid before: 2021-05-01T19:33:12
+|_Not valid after:  2021-10-31T19:33:12
+|_ssl-date: 2021-05-02T19:33:57+00:00; -3s from scanner time.
+8080/tcp  open  http-proxy
+|_http-title: HFS /
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+
+Host script results:
+|_clock-skew: mean: -2s, deviation: 0s, median: -3s
+|_nbstat: NetBIOS name: STEELMOUNTAIN, NetBIOS user: <unknown>, NetBIOS MAC: 02:61:79:97:84:f7 (unknown)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-05-02T19:33:58
+|_  start_date: 2021-05-02T19:33:05
+
+# Nmap done at Sun May  2 14:35:31 2021 -- 1 IP address (1 host up) scanned in 92.73 seconds

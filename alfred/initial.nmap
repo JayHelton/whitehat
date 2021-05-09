@@ -1,0 +1,19 @@
+# Nmap 7.91 scan initiated Mon May  3 18:59:09 2021 as: nmap -sS -sC -F -Pn -oN initial.nmap 10.10.13.82
+Nmap scan report for 10.10.13.82
+Host is up (0.11s latency).
+Not shown: 97 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html).
+3389/tcp open  ms-wbt-server
+| ssl-cert: Subject: commonName=alfred
+| Not valid before: 2021-05-02T23:53:57
+|_Not valid after:  2021-11-01T23:53:57
+8080/tcp open  http-proxy
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+
+# Nmap done at Mon May  3 18:59:43 2021 -- 1 IP address (1 host up) scanned in 34.11 seconds

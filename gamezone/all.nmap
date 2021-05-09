@@ -1,0 +1,20 @@
+# Nmap 7.91 scan initiated Sat May  8 19:48:04 2021 as: nmap -A -F -Pn -oN all.nmap 10.10.169.229
+Nmap scan report for 10.10.169.229
+Host is up (0.20s latency).
+Not shown: 68 closed ports, 30 filtered ports
+PORT   STATE SERVICE    VERSION
+22/tcp open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp open  tcpwrapped
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+
+TRACEROUTE (using port 995/tcp)
+HOP RTT    ADDRESS
+1   ... 30
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May  8 19:49:29 2021 -- 1 IP address (1 host up) scanned in 85.59 seconds
